@@ -22,16 +22,34 @@ export class Quiz {
 }
 
   getQuestion() {
-    const c = this.current;
+  const item = this.current;
 
-    if (this.questionMode === "character_to_pinyin") {
-      return { type: "character", value: c.character, answer: c.pinyin };
-    }
+  const modes = ["char_pinyin", "char_def", "def_char"];
+  const mode = modes[Math.floor(Math.random() * modes.length)];
 
-    if (this.questionMode === "english_to_character") {
-      return { type: "english", value: c.english, answer: c.character };
-    }
+  if (mode === "char_pinyin") {
+    return {
+      type: "character",
+      value: item.character,
+      answer: item.pinyin
+    };
   }
+
+  if (mode === "char_def") {
+    return {
+      type: "character",
+      value: item.character,
+      answer: item.english
+    };
+  }
+
+  // def → char
+  return {
+    type: "definition",
+    value: item.english,
+    answer: item.character
+  };
+}
 
   checkAnswer(input) {
     return input.trim().toLowerCase() ===
