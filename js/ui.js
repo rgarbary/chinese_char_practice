@@ -4,7 +4,7 @@ export const UI = {
   feedbackEl: document.getElementById("feedback"),
   scoreEl: document.getElementById("score"),
 
-  showChoices: function(choices, onSelect) {
+  showChoices: function (choices, onSelect) {
     const container = document.getElementById("choices");
     container.innerHTML = "";
 
@@ -19,17 +19,17 @@ export const UI = {
     });
   },
 
-  showCorrect: function() {
+  showCorrect: function () {
     this.feedbackEl.textContent = "Correct!";
     this.feedbackEl.style.color = "green";
   },
 
-  showWrong: function(answer) {
+  showWrong: function (answer) {
     this.feedbackEl.textContent = `Wrong. Answer: ${answer}`;
     this.feedbackEl.style.color = "red";
   },
 
-  updateScore: function(score) {
+  updateScore: function (score) {
     this.scoreEl.textContent = `Score: ${score}`;
   }
 };
