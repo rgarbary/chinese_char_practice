@@ -1,5 +1,5 @@
 export const UI = {
-  typeEl: document.getElementById("questionType"),
+  //typeEl: document.getElementById("questionType"),
   questionEl: document.getElementById("question"),
   feedbackEl: document.getElementById("feedback"),
   scoreEl: document.getElementById("score"),
