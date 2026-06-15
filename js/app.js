@@ -10,8 +10,7 @@ function render() {
   UI.typeEl.textContent = `Question type: ${q.type}`;
   UI.questionEl.textContent = q.value;
 
-  const field =
-    q.type === "character" ? "pinyin" : "character";
+  const field = q.answerField;
 
   const choices = getRandomChoices(
     vocabulary,
