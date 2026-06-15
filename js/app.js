@@ -29,8 +29,6 @@ function render() {
 
     UI.updateScore(quiz.score);
   });
-
-  UI.updateScore(quiz.score);
 }
 
 function getRandomChoices(vocab, correctAnswer, field) {
@@ -44,11 +42,5 @@ function getRandomChoices(vocab, correctAnswer, field) {
 
   return all.sort(() => Math.random() - 0.5);
 }
-
-
-document.getElementById("showBtn").onclick = () => {
-  const q = quiz.getQuestion();
-  UI.showWrong(q.answer);
-};
 
 render();
