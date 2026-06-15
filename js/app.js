@@ -25,7 +25,7 @@ function render() {
       UI.showCorrect();
     } else {
       UI.showWrong(q.answer);
-    }
+    }}
 
     UI.updateScore(quiz.score);
 
