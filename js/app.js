@@ -33,7 +33,7 @@ function render() {
       render();
     }, 600);
   });
-
+} 
 
 function getRandomChoices(vocab, correctAnswer, field) {
   const others = vocab
