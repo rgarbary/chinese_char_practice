@@ -53,3 +53,23 @@ button {
   margin-top: 10px;
   color: #444;
 }
+
+#choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.choice {
+  padding: 12px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.choice:hover {
+  background: #ddd;
+}
