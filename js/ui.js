@@ -25,4 +25,20 @@ export const UI = {
   updateScore(score) {
     this.scoreEl.textContent = `Score: ${score}`;
   }
+
+  showChoices(choices, onSelect) {
+  const container = document.getElementById("choices");
+  container.innerHTML = "";
+
+  choices.forEach(choice => {
+    const div = document.createElement("div");
+    div.className = "choice";
+    div.textContent = choice;
+
+    div.onclick = () => onSelect(choice);
+
+    container.appendChild(div);
+  });
+}
+  
 };
