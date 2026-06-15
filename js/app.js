@@ -6,8 +6,43 @@ const quiz = new Quiz(vocabulary);
 
 function render() {
   const q = quiz.getQuestion();
-  UI.showQuestion(q);
+
+  UI.typeEl.textContent = `Question type: ${q.type}`;
+  UI.questionEl.textContent = q.value;
+
+  const field =
+    q.type === "character" ? "pinyin" : "character";
+
+  const choices = getRandomChoices(
+    vocabulary,
+    q.answer,
+    field
+  );
+
+  UI.showChoices(choices, (selected) => {
+    if (selected === q.answer) {
+      quiz.incrementScore();
+      UI.showCorrect();
+    } else {
+      UI.showWrong(q.answer);
+    }
+
+    UI.updateScore(quiz.score);
+  });
+
   UI.updateScore(quiz.score);
+}
+
+function getRandomChoices(vocab, correctAnswer, field) {
+  const others = vocab
+    .filter(v => v[field] !== correctAnswer)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 7)
+    .map(v => v[field]);
+
+  const all = [...others, correctAnswer];
+
+  return all.sort(() => Math.random() - 0.5);
 }
 
 document.getElementById("submitBtn").onclick = () => {
