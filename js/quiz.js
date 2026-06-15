@@ -1,6 +1,7 @@
 export class Quiz {
   constructor(vocab) {
-    this.vocab = this.shuffle([...vocab]);
+    this.vocab = this.shuffle(
+         vocab.filter(v => v.include === true));
     this.index = 0;
     this.score = 0;
     this.current = this.vocab[this.index];
