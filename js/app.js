@@ -45,25 +45,6 @@ function getRandomChoices(vocab, correctAnswer, field) {
   return all.sort(() => Math.random() - 0.5);
 }
 
-document.getElementById("submitBtn").onclick = () => {
-  const input = UI.inputEl.value;
-
-  const q = quiz.getQuestion();
-
-  if (quiz.checkAnswer(input)) {
-    quiz.incrementScore();
-    UI.showCorrect();
-  } else {
-    UI.showWrong(q.answer);
-  }
-
-  UI.updateScore(quiz.score);
-};
-
-document.getElementById("nextBtn").onclick = () => {
-  quiz.next();
-  render();
-};
 
 document.getElementById("showBtn").onclick = () => {
   const q = quiz.getQuestion();
