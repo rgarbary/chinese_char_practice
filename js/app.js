@@ -7,7 +7,7 @@ const quiz = new Quiz(vocabulary);
 function render() {
   const q = quiz.getQuestion();
 
-  UI.typeEl.textContent = `Question type: ${q.type}`;
+  //UI.typeEl.textContent = `Question type: ${q.type}`;
   UI.questionEl.textContent = q.value;
 
   const field = q.answerField;
