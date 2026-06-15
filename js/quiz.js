@@ -17,15 +17,9 @@ export class Quiz {
   }
 
   next() {
-    this.index++;
-
-    if (this.index >= this.vocab.length) {
-      this.vocab = this.shuffle([...this.vocab]);
-      this.index = 0;
-    }
-
-    this.current = this.vocab[this.index];
-  }
+  this.index = (this.index + 1) % this.vocab.length;
+  this.current = this.vocab[this.index];
+}
 
   getQuestion() {
     const c = this.current;
