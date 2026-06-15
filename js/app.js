@@ -20,21 +20,21 @@ function render() {
   );
 
   UI.showChoices(choices, (selected) => {
-  if (selected === q.answer) {
-    quiz.incrementScore();
-    UI.showCorrect();
-  } else {
-    UI.showWrong(q.answer);
-  }
+    if (selected === q.answer) {
+      quiz.incrementScore();
+      UI.showCorrect();
+    } else {
+      UI.showWrong(q.answer);
+    }
 
-  UI.updateScore(quiz.score);
+    UI.updateScore(quiz.score);
 
-  // 🔥 MOVE TO NEXT QUESTION AFTER CLICK
-  setTimeout(() => {
-    quiz.next();
-    render();
-  }, 600);
-});
+    setTimeout(() => {
+      quiz.next();
+      render();
+    }, 600);
+  });
+}
 
 function getRandomChoices(vocab, correctAnswer, field) {
   const others = vocab
