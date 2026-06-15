@@ -31,7 +31,9 @@ export class Quiz {
     return {
       type: "character",
       value: item.character,
-      answer: item.pinyin
+      answer: item.pinyin,
+      answerField: "pinyin"
+      
     };
   }
 
@@ -39,7 +41,8 @@ export class Quiz {
     return {
       type: "character",
       value: item.character,
-      answer: item.english
+      answer: item.english,
+      answerField: "english"
     };
   }
 
@@ -47,7 +50,8 @@ export class Quiz {
   return {
     type: "definition",
     value: item.english,
-    answer: item.character
+    answer: item.character,
+    answerField: "character"
   };
 }
 
