@@ -34,6 +34,7 @@ function render() {
   UI.showReview(item); // 👈 THIS is the key line
 
   setTimeout(() => {
+    console.log("NEXT QUESTION");
     quiz.next();
     render();
   }, 1200); // slightly longer so user can read it
