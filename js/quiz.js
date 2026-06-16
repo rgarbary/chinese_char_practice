@@ -19,6 +19,7 @@ export class Quiz {
   next() {
   this.index = (this.index + 1) % this.vocab.length;
   this.current = this.vocab[this.index];
+  console.log("Next question:", this.current);
 }
 
   getQuestion() {
