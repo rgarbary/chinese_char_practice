@@ -5,6 +5,7 @@ import { UI } from "./ui.js";
 const quiz = new Quiz(vocabulary);
 
 function render() {
+  const item = quiz.current;
   const q = quiz.getQuestion();
 
   //UI.typeEl.textContent = `Question type: ${q.type}`;
