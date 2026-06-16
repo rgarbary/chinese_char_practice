@@ -1,5 +1,4 @@
 export const UI = {
-  //typeEl: document.getElementById("questionType"),
   questionEl: document.getElementById("question"),
   feedbackEl: document.getElementById("feedback"),
   scoreEl: document.getElementById("score"),
@@ -7,6 +6,12 @@ export const UI = {
 
   showChoices: function (choices, onSelect) {
     const container = document.getElementById("choices");
+
+    if (!container) {
+      console.error("Missing #choices element in HTML");
+      return;
+    }
+
     container.innerHTML = "";
 
     choices.forEach(choice => {
@@ -14,32 +19,47 @@ export const UI = {
       div.className = "choice";
       div.textContent = choice;
 
-      div.onclick = () => onSelect(choice);
+      div.onclick = () => {
+        try {
+          console.log("Choice clicked:", choice);
+          onSelect(choice);
+        } catch (err) {
+          console.error("Error in onSelect():", err);
+        }
+      };
 
       container.appendChild(div);
     });
   },
 
   showCorrect: function () {
+    if (!this.feedbackEl) return;
+
     this.feedbackEl.textContent = "Correct!";
     this.feedbackEl.style.color = "green";
   },
 
   showReview: function (item) {
-  this.reviewEl.innerHTML = `
-    <div><strong>Correct answer:</strong></div>
-    <div>Character: ${item.character}</div>
-    <div>Pinyin: ${item.pinyin}</div>
-    <div>English: ${item.english}</div>
-  `;
-},
+    if (!this.reviewEl || !item) return;
+
+    this.reviewEl.innerHTML = `
+      <div><strong>Correct answer:</strong></div>
+      <div>Character: ${item.character}</div>
+      <div>Pinyin: ${item.pinyin}</div>
+      <div>English: ${item.english}</div>
+    `;
+  },
 
   showWrong: function (answer) {
+    if (!this.feedbackEl) return;
+
     this.feedbackEl.textContent = `Wrong. Answer: ${answer}`;
     this.feedbackEl.style.color = "red";
   },
 
   updateScore: function (score) {
+    if (!this.scoreEl) return;
+
     this.scoreEl.textContent = `Score: ${score}`;
   }
 };
