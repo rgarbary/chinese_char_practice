@@ -61,6 +61,14 @@ button {
   margin-top: 15px;
 }
 
+#review {
+  margin-top: 15px;
+  padding: 10px;
+  background: #eef2ff;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
 .choice {
   padding: 12px;
   background: #f0f0f0;
