@@ -19,7 +19,9 @@ function render() {
     field
   );
 
-  UI.showChoices(choices, (selected) => {
+ UI.showChoices(choices, (selected) => {
+  const item = quiz.current; // capture BEFORE state changes
+
   if (selected === q.answer) {
     quiz.incrementScore();
     UI.showCorrect();
@@ -29,12 +31,14 @@ function render() {
 
   UI.updateScore(quiz.score);
 
+  UI.showReview(item); // 👈 THIS is the key line
+
   setTimeout(() => {
     quiz.next();
     render();
-  }, 600);
+  }, 1200); // slightly longer so user can read it
 });
-} // ✅ THIS WAS MISSING — closes render()
+} 
 
 function getRandomChoices(vocab, correctAnswer, field) {
   const others = vocab
