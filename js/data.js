@@ -98,7 +98,7 @@ export const vocabulary = [
   { character: "起床", pinyin: "qǐchuáng", english: "get up", enabled: true },
   { character: "应该", pinyin: "yīnggāi", english: "should", enabled: true },
   { character: "问题", pinyin: "wèntí", english: "question", enabled: true },
-  { character: "分", pinyin: "fēn", english: "minute", enabled: true },
+  { character: "分钟", pinyin: "fēnzhōng", english: "minute (not when giving time)", enabled: true },
   { character: "块", pinyin: "kuài", english: "dollar", enabled: true },
   { character: "全身", pinyin: "quánshēn", english: "whole body", enabled: true },
   { character: "舒服", pinyin: "shūfu", english: "comfortable", enabled: true },
