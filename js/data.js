@@ -120,5 +120,7 @@ export const vocabulary = [
   { character: "姑娘", pinyin: "gūniang", english: "girl", enabled: true },
   { character: "得", pinyin: "dé", english: "get", enabled: true },
   { character: "告诉", pinyin: "gàosu", english: "tell", enabled: true },
-  { character: "电影", pinyin: "diànyǐng", english: "movie", enabled: true }
+  { character: "电影", pinyin: "diànyǐng", english: "movie", enabled: true },
+  { character: "再", pinyin: "zài", english: "again", enabled: true },
+  { character: "还是", pinyin: "háishì", english: "or", enabled: true }
 ];
