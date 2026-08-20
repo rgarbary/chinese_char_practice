@@ -106,7 +106,7 @@ export const vocabulary = [
   { character: "看病", pinyin: "kànbìng", english: "see doctor", enabled: true },
   { character: "吧", pinyin: "ba", english: "modal particle", enabled: true },
   { character: "冷", pinyin: "lěng", english: "cold", enabled: true },
-  { character: "想", pinyin: "xiāng", english: "think/want", enabled: true },
+  { character: "想", pinyin: "xiǎng", english: "think/want", enabled: true },
   { character: "休息", pinyin: "xiūxi", english: "rest", enabled: true },
   { character: "挂号", pinyin: "guàhào", english: "register", enabled: true },
   { character: "发烧", pinyin: "fāshāo", english: "fever", enabled: true },
