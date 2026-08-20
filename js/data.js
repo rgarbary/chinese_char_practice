@@ -122,8 +122,8 @@ export const vocabulary = [
   { character: "告诉", pinyin: "gàosu", english: "tell", enabled: true },
   { character: "电影", pinyin: "diànyǐng", english: "movie", enabled: true },
   { character: "再", pinyin: "zài", english: "again", enabled: true },
-  { character: "还是", pinyin: "háishì", english: "or", enabled: true }，
-  { character: "位", pinyin: "wèi", english: "respectful MW for people", enabled: true }，
-  { character: "碗", pinyin: "wǎn", english: "MW for bowls", enabled: true }，
+  { character: "还是", pinyin: "háishì", english: "or", enabled: true },
+  { character: "位", pinyin: "wèi", english: "respectful MW for people", enabled: true },
+  { character: "碗", pinyin: "wǎn", english: "MW for bowls", enabled: true },
   { character: "条", pinyin: "tiáo", english: "MW for long things", enabled: true }
 ];
