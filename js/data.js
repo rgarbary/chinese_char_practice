@@ -122,5 +122,22 @@ export const vocabulary = [
   { character: "告诉", pinyin: "gàosu", english: "tell", enabled: true },
   { character: "电影", pinyin: "diànyǐng", english: "movie", enabled: true },
   { character: "再", pinyin: "zài", english: "again", enabled: true },
-  { character: "还是", pinyin: "háishì", english: "or", enabled: true }
+  { character: "还是", pinyin: "háishì", english: "or", enabled: true },
+  { character: "位", pinyin: "wèi", english: "respectful MW for people", enabled: true },
+  { character: "碗", pinyin: "wǎn", english: "MW for bowls", enabled: true },
+  { character: "条", pinyin: "tiáo", english: "MW for long things", enabled: true },
+  { character: "只", pinyin: "zhī", english: "MW for many animals (or one pair) ", enabled: true },
+  { character: "辆", pinyin: "liàng", english: "MW for vehicles", enabled: true },
+  { character: "双", pinyin: "shuāng", english: "MW for pairs", enabled: true },
+  { character: "棵", pinyin: "kē", english: "MW for trees/plants", enabled: true },
+  { character: "树", pinyin: "shù", english: "tree", enabled: true },
+  { character: "本", pinyin: "běn", english: "MW for books and printed volumes", enabled: true },
+  { character: "头", pinyin: "tóu", english: "MW for large animals, often livestock", enabled: true },
+  { character: "匹", pinyin: "pǐ", english: "MW for horses", enabled: true },
+  { character: "份", pinyin: "fèn", english: "MW for jobs/work", enabled: true },
+  { character: "座", pinyin: "zuò", english: "MW for large stationary things", enabled: true },
+  { character: "山", pinyin: "shān", english: "mountain", enabled: true },
+  { character: "读", pinyin: "dú", english: "read", enabled: true },
+  { character: "花园", pinyin: "huāyuán", english: "garden", enabled: true }
+
 ];
