@@ -138,6 +138,14 @@ export const vocabulary = [
   { character: "座", pinyin: "zuò", english: "MW for large stationary things", enabled: true },
   { character: "山", pinyin: "shān", english: "mountain", enabled: true },
   { character: "读", pinyin: "dú", english: "read", enabled: true },
-  { character: "花园", pinyin: "huāyuán", english: "garden", enabled: true }
+  { character: "花园", pinyin: "huāyuán", english: "garden", enabled: true },
+  { character: "加", pinyin: "jiā", english: "add", enabled: true },
+  { character: "减", pinyin: "jiǎn", english: "subtract", enabled: true },
+  { character: "乘", pinyin: "chéng", english: "multiply", enabled: true },
+  { character: "除", pinyin: "chú", english: "divide", enabled: true },
+  { character: "百", pinyin: "bǎi", english: "hundred", enabled: true },
+  { character: "千", pinyin: "qiān", english: "thousand", enabled: true },
+  { character: "万", pinyin: "wàn", english: "ten thousand", enabled: true },
+  { character: "等于", pinyin: "děngyú", english: "equals", enabled: true }
 
 ];
