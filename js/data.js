@@ -146,6 +146,7 @@ export const vocabulary = [
   { character: "百", pinyin: "bǎi", english: "hundred", enabled: true },
   { character: "千", pinyin: "qiān", english: "thousand", enabled: true },
   { character: "万", pinyin: "wàn", english: "ten thousand", enabled: true },
-  { character: "等于", pinyin: "děngyú", english: "equals", enabled: true }
+  { character: "等于", pinyin: "děngyú", english: "equals", enabled: true },
+  { character: "楼上", pinyin: "lóushang", english: "upstairs", enabled: true }
 
 ];
