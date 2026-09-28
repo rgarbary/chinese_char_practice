@@ -77,7 +77,7 @@ export const vocabulary = [
   { character: "送", pinyin: "sòng", english: "give as gift", enabled: true },
   { character: "毛", pinyin: "máo", english: "0.1 yuan", enabled: true },
   { character: "香蕉", pinyin: "xiāngjiāo", english: "banana", enabled: true },
-  { character: "会", pinyin: "huì", english: "can/know how", enabled: true },
+  { character: "会", pinyin: "huì", english: "can/know how OR predict", enabled: true },
   { character: "司机", pinyin: "sījī", english: "driver", enabled: true },
   { character: "差", pinyin: "chà", english: "lack / short of", enabled: true },
   { character: "能", pinyin: "néng", english: "can (ability)", enabled: true },
