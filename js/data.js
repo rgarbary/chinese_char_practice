@@ -147,6 +147,19 @@ export const vocabulary = [
   { character: "千", pinyin: "qiān", english: "thousand", enabled: true },
   { character: "万", pinyin: "wàn", english: "ten thousand", enabled: true },
   { character: "等于", pinyin: "děngyú", english: "equals", enabled: true },
-  { character: "楼上", pinyin: "lóushang", english: "upstairs", enabled: true }
+  { character: "楼上", pinyin: "lóushang", english: "upstairs", enabled: true },
+  { character: "楼下", pinyin: "lóuxia", english: "downstairs", enabled: true },
+  { character: "床", pinyin: "chuáng", english: "bed", enabled: true },
+  { character: "柜子", pinyin: "guìzi", english: "shelf", enabled: true },
+  { character: "桌子", pinyin: "zhuōzi", english: "table", enabled: true },
+  { character: "鞋子", pinyin: "xiézi", english: "shoes", enabled: true },
+  { character: "秋天", pinyin: "qīutiān", english: "Fall (season)", enabled: true },
+  { character: "春天", pinyin: "chūntiān", english: "Spring (season)", enabled: true },
+  { character: "夏天", pinyin: "xiàtiān", english: "Summer", enabled: true },
+  { character: "冬天", pinyin: "dōngtiān", english: "Winter", enabled: true },
+  { character: "下雨", pinyin: "xiàyǔ", english: "rain (v)", enabled: true },
+  { character: "下雪", pinyin: "xiàxuě", english: "snow (v)", enabled: true }
+ 
+  
 
 ];
